@@ -59,7 +59,6 @@ header {
     margin: auto;
     border-radius: 5px;
     cursor: pointer;
-    /* filter: drop-shadow(5px 5px 5px #B8B8B8); */
 }
 
 .cards img:hover {
@@ -72,21 +71,17 @@ header {
 
 #home_card-profile, #home_card-hometown, #home_card-food, #home_card-place {
     justify-content: center;
-    /* border: #1F1F1F 2px solid; */
 }
 #home_textProfile, #home_textHometown, #home_textFood, #home_textPlace {
-    /* display: none; */
     cursor: pointer;
     display: flex;
     position: absolute;
     font-size: 18px;
     font-family: 'Merriweather', serif;
-    /* font-family: 'Poly', serif; */
     font-weight: 700;
     color: #fff;
     width: 400px;
     height: 10%;
-    /* background-image: linear-gradient(to bottom, rgba(255, 0, 0, 0), #6D8299 5%); */
     background-color: #6D8299;
     border-radius: 0px 0px 5px 5px;
     z-index: 1;

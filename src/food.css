@@ -64,7 +64,6 @@ nav {
     font-family: 'Merriweather', serif;
     font-weight: 900;
     font-size: 20px;
-    /* margin-left: 18.4%; */
     text-align: center;
     margin-bottom: 20px;
 }
@@ -120,7 +119,6 @@ nav {
     font-family: 'Merriweather', serif;
     font-weight: 900;
     font-size: 20px;
-    /* margin-left: 18.4%; */
     text-align: center;
     margin-bottom: 20px;
 }
@@ -162,14 +160,3 @@ nav {
     font-size: 18px;
     text-align: justify;
 }
-
-/* #food::before {
-    content: "";
-    width:90px;
-    height: 8px;
-    margin: 13px 0px 0 18px;
-    background-color: #80a2ff;
-    display: block;
-    position: absolute;
-    z-index: -1;
-} */
