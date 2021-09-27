@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz 1 - Home</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    <header>
+        <p><a href="home.html" id="logo">Abyan Ahmad</a></p>
+        <div id="contents">Contents</div>
+    </header>
+    <div id="line"></div>
+
+
+    <div class="cards">
+        <div id="home_card-profile">
+            <div id="home_textProfile">Profile</div>
+            <img src="Images/Hometown/4.png" alt="profile" id="home_imgProfile">
+        </div>
+    
+        <div id="home_card-hometown">
+            <div id="home_textHometown">Hometown</div>
+            <img src="Images/Hometown/1.png" alt="medan" id="home_imgHometown">
+        </div>
+    
+        <div id="home_card-food">
+            <div id="home_textFood">Local Food</div>
+            <img src="Images/Food/Bika_Ambon.png" alt="food" id="home_imgFood">
+        </div>
+    
+        <div id="home_card-place">
+            <div id="home_textPlace">Tourist Place</div>
+            <img src="Images/Place/istana-maimun.jpg" alt="place" id="home_imgPlace">
+        </div>
+    </div>
+
+    <script>
+        const profile = document.querySelector('#home_card-profile');
+        const hometown = document.querySelector('#home_card-hometown');
+        const food = document.querySelector('#home_card-food');
+        const place = document.querySelector('#home_card-place');
+
+        profile.addEventListener('click', () => {
+            window.location="profile.html";
+        });
+        hometown.addEventListener('click', () => {
+            window.location="hometown.html";
+        });
+        food.addEventListener('click', () => {
+            window.location="food.html";
+        });
+        place.addEventListener('click', () => {
+            window.location="place.html";
+        });
+    </script>
+</body>
+</html>

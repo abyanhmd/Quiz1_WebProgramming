@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Poly&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+*::selection {
+    background-color: #80a2ff;
+    color: #fff;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+    padding: 20px 15%;
+    background-color: #fff;
+    cursor: default;
+}
+
+#logo {
+    text-decoration: none;
+    color: black;
+    font-family: 'Merriweather', serif;
+    font-weight: 900;
+    font-size: 24px;
+}
+
+#contents {
+    color: #1F1F1F;
+    margin: 0 20px;
+    font-size: 20px;
+    font-family: 'Poly', serif;
+    font-weight: 700;
+}
+
+#line {
+    margin: auto;
+    width: 80%;
+    height: 2px;
+    background-color: #B8B8B8;
+}
+
+.cards {
+    margin-top: 3%;
+    margin-bottom: 2%;
+    display: grid;
+    grid-template-columns: 445px 445px;
+    grid-auto-rows: minmax(320px, auto);
+    justify-content: center;
+    grid-row-gap: 20px;
+}
+.cards img {
+    width: 400px;
+    max-height: auto;
+    margin: auto;
+    border-radius: 5px;
+    cursor: pointer;
+    /* filter: drop-shadow(5px 5px 5px #B8B8B8); */
+}
+
+.cards img:hover {
+    filter: blur(2px);
+    opacity: 0.8;
+    border: #B8B8B8 2px solid;
+    transition: ease-in-out 0.25s;
+    padding: 1%;
+}
+
+#home_card-profile, #home_card-hometown, #home_card-food, #home_card-place {
+    justify-content: center;
+    /* border: #1F1F1F 2px solid; */
+}
+#home_textProfile, #home_textHometown, #home_textFood, #home_textPlace {
+    /* display: none; */
+    cursor: pointer;
+    display: flex;
+    position: absolute;
+    font-size: 18px;
+    font-family: 'Merriweather', serif;
+    /* font-family: 'Poly', serif; */
+    font-weight: 700;
+    color: #fff;
+    width: 400px;
+    height: 10%;
+    /* background-image: linear-gradient(to bottom, rgba(255, 0, 0, 0), #6D8299 5%); */
+    background-color: #6D8299;
+    border-radius: 0px 0px 5px 5px;
+    z-index: 1;
+    align-items: center;
+    justify-content: center;
+}
+
+#home_textProfile, #home_textHometown {
+    top: calc(45% + 10px);
+}
+#home_textFood, #home_textPlace {
+    top: calc(90% + 12px);
+}
+.cards > * {
+    margin: 20px 20px;
+}

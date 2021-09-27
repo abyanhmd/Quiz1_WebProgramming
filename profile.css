@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Poly&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+}
+
+*::selection {
+    background-color: #80a2ff;
+    color: #fff;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+    padding: 20px 15%;
+}
+
+#profile {
+    display: inline;
+    background-image: linear-gradient(#fff 65%, #80a2ff 55%) ;
+    cursor: default;
+}
+
+#logo {
+    text-decoration: none;
+    color: black;
+    font-family: 'Merriweather', serif;
+    font-weight: 900;
+    font-size: 24px;
+}
+
+nav {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+#nav li a {
+    text-decoration: none;
+    color: #1F1F1F;
+    margin: 0 20px;
+    font-size: 20px;
+    font-family: 'Poly', serif;
+    font-weight: 700;
+}
+
+#line {
+    margin: auto;
+    width: 80%;
+    height: 2px;
+    background-color: #B8B8B8;
+}
+
+#profileContainer {
+    display: grid;
+    grid-template-columns: 450px 450px;
+    /* grid-template-columns: 500px; */
+    justify-content: center;
+    margin: 3% 50px;
+}
+
+#imgProfile {
+    width: 400px;
+    max-height: auto;
+    border-radius: 10px;
+}
+
+#textProfile {
+    width: 400px;
+    color: #1F1F1F;
+    font-family: 'Poly', serif;
+    font-size: 20px;
+    text-align: justify;
+}

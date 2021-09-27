@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz 1 - Local Food</title>
+    <link rel="stylesheet" href="food.css">
+</head>
+<body>
+    <!-- Header and Navigation Bar -->
+    <header>
+        <p><a href="home.html" id="logo">Abyan Ahmad</a></p>
+        <nav id="nav">
+            <li><a href="profile.html" id="profile">Profile</a></li>
+            <li><a href="hometown.html" id="hometown">Hometown</a></li>
+            <li><a id="food">Local Food</a></li>
+            <li><a href="place.html" id="place">Tourist Place</a></li>
+        </nav>
+    </header>
+    <div id="line"></div>
+    
+    <!-- Contents -->
+    <!-- Soto Medan -->
+    <div class="cards">
+        <p id="titleSoto">Soto Medan</p>
+        <div id="card-1">
+            <!-- Visible Content -->
+            <img src="Images/Food/Soto_Sinar_Pagi.jpg" alt="Soto_Sinar_Pagi" id="imgSoto">
+            <div>
+                <p id="textSoto">
+                    Soto Medan is part of Indonesia's culinary wealth which has many fans. Not only a matter of taste, but Soto Medan also gives an appetizing appearance.<br><br>
+                    The hallmark of Soto Medan is that it has a greenish-yellow color because it contains coconut milk and spices. From the color of the sauce alone, the eyes are already made to glance, especially when eaten. What distinguishes Soto Medan from other Soto is the use of cumin (cumin) in the seasoning. <br><br>
+                    The most famous Soto Medan in Medan is at Sinar Pagi Restaurant located on Jalan Sei Deli No. 2D, Silalas, West Medan District, Medan City. <br><br>
+                    If you want to enjoy delicious Soto Medan, this is the right place. The Soto here has a delicious...
+                </p>
+                <p id="seemoreSoto" class="seemore">See more...</p>
+            </div>
+
+            <!-- Extended Content -->
+            <div id="extSoto">
+                <div id="crossSoto">
+                    <div id="cross-left"></div>
+                    <div id="cross-right"></div>
+                </div>
+
+                <p class="titlePlace">Soto Medan</p>
+                <p class="extText">
+                    Soto Medan is part of Indonesia's culinary wealth which has many fans. Not only a matter of taste, but Soto Medan also gives an appetizing appearance.<br><br>
+                    The hallmark of Soto Medan is that it has a greenish-yellow color because it contains coconut milk and spices. From the color of the sauce alone, the eyes are already made to glance, especially when eaten. What distinguishes Soto Medan from other Soto is the use of cumin (cumin) in the seasoning. <br><br>
+                    The most famous Soto Medan in Medan is at Sinar Pagi Restaurant located on Jalan Sei Deli No. 2D, Silalas, West Medan District, Medan City. <br><br>
+                    If you want to enjoy delicious Soto Medan, this is the right place. The Soto here has a delicious taste with thick coconut milk sauce and is rich in spices served with pieces of beef, cakes, peanut brittle, and a unique chili sauce, a kind of soy sauce with a sprinkling of fried onions. <br><br>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div id="line-cards"></div>
+
+    <!-- Bika Ambon -->
+    <div class="cards">
+        <p id="titleBika">Bika Ambon</p>
+        <div id="card-2">
+            <!-- Visible Content -->
+            <img src="Images/Food/Bika_Ambon.png" alt="Bika_Ambon" id="imgBika">
+            <div>
+                <p id="textBika">
+                    Bika ambon or golden cake, is an Indonesian dessert, made from ingredients such as tapioca flour, eggs, sugar, yeast and coconut milk. Bika ambon is generally sold in pandan and banana flavor, but today it is also available in other flavors like durian, cheese and chocolate. This cake is a further development of kue bingka, a famous traditional cake in the eastern parts of Indonesia. <br><br>
+                    The cake is notable for its sponge-like holes, which was formed by yeast in the cake dough...
+                </p>
+                <p id="seemoreBika" class="seemore">See more...</p>
+            </div>
+
+            <!-- Extended Content -->
+            <div id="extBika">
+                <div id="crossBika">
+                    <div id="cross-left"></div>
+                    <div id="cross-right"></div>
+                </div>
+
+                <p class="titlePlace">Bika Ambon</p>
+                <p class="extText">
+                    Bika ambon or golden cake, is an Indonesian dessert, made from ingredients such as tapioca flour, eggs, sugar, yeast and coconut milk. Bika ambon is generally sold in pandan and banana flavor, but today it is also available in other flavors like durian, cheese and chocolate. This cake is a further development of kue bingka, a famous traditional cake in the eastern parts of Indonesia. <br><br>
+                    The cake is notable for its sponge-like holes, which was formed by yeast in the cake dough that creates bubbles. This holes gives it a unique spongy texture when it is baked. Its close analogue probably is the Malay sponge cake, due to similar spongy holes, but the moists and texture is actually slightly different. <br><br>
+                    Although the name contains the word "Ambon", the name of an island and its largest city, Bika ambon is widely known as the specialty cake of Medan in North Sumatra and is often brought as a gift by those who visited the city. The origins of bika ambon are not known; however, there is some speculation that they came to Medan through Ambonese traders, where the locals took a liking to it. <br><br>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const dropdownSoto = document.querySelector('#extSoto');
+        const dropdownBika = document.querySelector('#extBika');
+
+        const extSoto = document.querySelector('#seemoreSoto');
+        const extBika = document.querySelector('#seemoreBika');
+
+        const crossSoto = document.querySelector('#crossSoto');
+        const crossBika = document.querySelector('#crossBika');
+
+        dropdownSoto.style.display = "none";
+        dropdownBika.style.display = "none";
+
+        extSoto.addEventListener('click', () => {
+            dropdownSoto.style.display = "block";
+        });
+        extBika.addEventListener('click', () => {
+            dropdownBika.style.display = "block";
+        });
+        crossSoto.addEventListener('click', () => {
+            dropdownSoto.style.display = "none";
+        });
+        crossBika.addEventListener('click', () => {
+            dropdownBika.style.display = "none";
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Poly&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+French+Canon&family=PT+Serif&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+}
+
+*::selection {
+    background-color: #80a2ff;
+    color: #fff;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+    padding: 20px 15%;
+}
+
+#hometown {
+    display: inline;
+    background-image: linear-gradient(#fff 65%, #80a2ff 55%) ;
+    cursor: default;
+}
+
+#logo {
+    text-decoration: none;
+    /* color: #ff5200; */
+    color: #1F1F1F;
+    font-family: 'Merriweather', serif;
+    font-weight: 900;
+    font-size: 24px;
+}
+
+nav {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+#nav li a {
+    text-decoration: none;
+    color: #1F1F1F;
+    margin: 0 20px;
+    font-size: 20px;
+    font-family: 'Poly', serif;
+    font-weight: 700;
+}
+
+#line {
+    margin: auto;
+    width: 80%;
+    height: 2px;
+    background-color: #B8B8B8;
+}
+
+#titleMedan {
+    margin-top: 3%;
+    font-family: 'Merriweather', serif;
+    font-weight: 900;
+    font-size: 24px;
+    /* margin-left: 18.4%; */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#medan {
+    display: inline;
+    margin-bottom: 5%;
+}
+
+.imgContainer, .textContainer {
+    display: flex;
+    justify-content: center;
+}
+
+/* .imgSlider img {
+    height: 500px;
+    max-width: auto;
+    border-radius: 5px;
+    filter: drop-shadow(5px 5px 5px #B8B8B8);
+} */
+
+/* Start */
+
+.imgSlider {
+    position: relative;
+    margin: auto;
+}
+.slideshow-img {
+    position: absolute;
+    height: 500px;
+    width: 800px;
+    transform: translateX(-50%);
+    filter: drop-shadow(5px 5px 5px #B8B8B8);
+    border-radius: 15px;
+    transition: opacity 1s ease-in-out;
+}
+
+
+/* End */
+#textMedan {
+    margin: 40% 0 0 0;
+    width: 800px;
+    color: #1F1F1F;
+    /* font-family: 'PT Serif', serif; */
+    font-family: 'Poly', serif;
+    font-size: 20px;
+    text-align: justify;
+}
+
+#medan > * {
+    margin: 0 30px;
+}
+
+.button {
+    /* display: flex; */
+    display: none;
+    justify-content: center;
+}
+.button button {
+    cursor: pointer;
+    margin: 1% 0.5%;
+    border: #1f1f1f 2px solid;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+}
+.button button:hover {
+    background-color: #80a2ff;
+}

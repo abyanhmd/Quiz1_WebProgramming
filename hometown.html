@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz 1 - Hometown</title>
+    <link rel="stylesheet" href="hometown.css">
+</head>
+<body>
+    <header>
+        <p><a href="home.html" id="logo">Abyan Ahmad</a></p>
+        <nav id="nav">
+            <li><a href="profile.html" id="profile">Profile</a></li>
+            <li><a id="hometown">Hometown</a></li>
+            <li><a href="food.html" id="food">Local Food</a></li>
+            <li><a href="place.html" id="place">Tourist Place</a></li>
+        </nav>
+    </header>
+    <div id="line"></div>
+
+    <p id="titleMedan">Medan</p>
+    <div id="medan">
+        <div class="imgContainer">
+            <div class="imgSlider">
+                <img src="Images/Hometown/1.png" alt="medan-1" class="slideshow-img">
+                <img src="Images/Hometown/2.jpg" alt="medan-2" class="slideshow-img">
+                <img src="Images/Hometown/3.png" alt="medan-3" class="slideshow-img">
+                <img src="Images/Hometown/4.png" alt="medan-4" class="slideshow-img">
+                <img src="Images/Hometown/5.jpg" alt="medan-5" class="slideshow-img">
+            </div>
+        </div>
+        
+        <div class="button">
+            <button id="button-1"></button>
+            <button id="button-2"></button>
+            <button id="button-3"></button>
+        </div>
+
+        <div class="textContainer">
+            <p id="textMedan">
+                Medan is the capital and largest city of the Indonesian province of North Sumatra. A regional hub and financial centre of Sumatra, it is one of the four main central cities of Indonesia, alongside Jakarta, Surabaya, and Makassar. As of the 2020 Census, Medan has a population of 2,435,252 within its city limits, and over 3.4 million in its built-up urban area, making it the fourth largest urban area in Indonesia. <br><br>
+                The Medan metropolitan area—which includes neighbouring Binjai, Deli Serdang Regency, and a part of Karo Regency—is the largest metropolitan area outside of Java, with 4,744,323 residents counted in the 2020 Census. Medan is a multicultural metropolis and a busy trading city bordered by the Strait of Malacca. A gateway to the western part of Indonesia, Medan is supported by the Port of Belawan and Kualanamu International Airport, both of which are connected to the city centre via toll roads and railways. <br><br>
+                The city was founded by Guru Patimpus, a Karonese man who named the area of swampy land in the confluence of Deli River and Babura river as Kampung Medan Putri. It later became a part of the Deli Sultanate which was established in 1632. With the help from the 9th Sultanate Sultan Ma'mun Al Rasyid Perkasa Alam, and Chinese businessmen Tjong Yong Hian and Tjong A Fie, the rapid development of the economy transformed Medan into a trade hub with the nickname het land dollar, meaning "the land of the money." <br><br>
+                The Deli Railway was established for shipping rubber, tea, timber, palm oil, and sugar from the city to the Port of Belawan. Medan was the capital of the State of East Sumatra before it became the provincial capital of North Sumatra. Medan was dubbed Parijs van Sumatra due to the city's resemblance to Paris. <br><br>
+            </p>    
+        </div>
+    </div>
+
+    <script>
+        // There is a bit delay for the slideshow, please wait a bit for the slideshow to run
+        const slideshowMedan = document.querySelectorAll('.imgSlider .slideshow-img');
+
+        const delay = 5000;
+        let counter = 0;
+        slideshowMedan[counter].style.opacity = 1;
+
+        setInterval(nextimage, delay);
+
+        function nextimage() {
+            slideshowMedan[counter].style.opacity = 0;
+            counter = (counter+1) % slideshowMedan.length;
+            slideshowMedan[counter].style.opacity = 1;
+        }
+    </script>
+</body>
+</html>
